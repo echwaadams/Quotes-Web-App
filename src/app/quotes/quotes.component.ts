@@ -22,6 +22,15 @@ export class QuotesComponent implements OnInit {
     })
   }
 
+  quoteDelete(isRead: any, index: number){
+    if(isRead){
+      let toDelete = confirm(`Are you sure you want to delete tthis Quote?`)
+      if(toDelete){
+        this.quotes.splice(index,1)
+      }
+    }
+  }
+
   displayInfo(index: number){
     this.quotes[index].showInfo = !this.quotes[index].showInfo
   }
