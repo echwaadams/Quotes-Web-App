@@ -44,8 +44,11 @@ Using your prefered text editor
 
 ## Technologies Used
 HTML5
+
 CSS
+
 AngularCLI
+
 Boostrap
 
 ## Known Bugs
