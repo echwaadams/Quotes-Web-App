@@ -1,6 +1,12 @@
-# QuotesWebApp
+# Quotes Web App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
+## Author 
+Adams Echwa
+
+## Description
+A web application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational. 
+
+
 
 ## Development server
 
@@ -25,3 +31,28 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Installation/Setup instruction
+Open Terminal 
+
+git clone 
+
+cd Quotes-Web-App
+
+Using your prefered text editor
+
+
+## Technologies Used
+HTML5
+CSS
+AngularCLI
+Boostrap
+
+## Known Bugs
+Add quote property does not work properly.
+
+## Contact Information
+If you have any question or contributions, please email me at adamsechwa18@gmail.com
+
+## License
+MIT LICENSE Copyright (c) 2021 Adams Echwa
