@@ -1,1 +1,20 @@
-<p>quotes works!</p>
+<div class="overlay">
+    <h1>{{title | titlecase}}</h1>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3"></div>
+        </div>
+        <div class="col-sm-9">
+            <div class="all-sect">
+                <div *ngFor="let quote of sortQuotes let i = index" style="width: 24rem;">
+                    <div class="card-b">
+                        <h4 class="card-t" appHighlightQuote>{{quote.title}} <button (click)="displayInfo(i)" class="btn btn-info btn-sm" id="quotes-button">See More</button></h4>
+                        <p class="card-te" id="param">{{quote.quote}}</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

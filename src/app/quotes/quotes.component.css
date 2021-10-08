@@ -1,0 +1,40 @@
+h1
+{
+    font-family: 'Special Elite',cursive;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+h4
+{
+    font-family: 'Architect Daughter', cursive;
+}
+span
+{
+    font-family: 'Architect Daughter', cursive;
+
+}
+.overlay
+{
+    background-color: rgba(0, 255, 255, 0.90);
+    border-radius: 5px;
+    margin: 4%;
+    padding: 1%;
+    
+}
+.all-sect
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card-te
+{
+    font-family: 'Handlee', cursive;
+}
+#quotes-button
+{
+    float: right;
+}
