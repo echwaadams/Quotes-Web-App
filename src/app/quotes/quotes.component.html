@@ -3,7 +3,9 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-3"></div>
+            <div class="col-sm-3">
+                <app-quotes-form (add)='addedQuote($event)'></app-quotes-form>
+            </div>
         </div>
         <div class="col-sm-9">
             <div class="all-sect">
@@ -12,6 +14,7 @@
                         <h4 class="card-t" appHighlightQuote>{{quote.title}} <button (click)="displayInfo(i)" class="btn btn-info btn-sm" id="quotes-button">See More</button></h4>
                         <p class="card-te" id="param">{{quote.quote}}</p>
                         <app-quote-details *ngIf='quote.showInfo' bind-quote='quote' (isRead)='quoteDelete($event,i)'></app-quote-details>
+                        <span class="card-substitute mb-2">Posted by: <span id="name">{{quote.name}}</span><span id="date">on:<span id="datecolor">{{quote.datePosted|date:'short'}}</span></span></span>
                     </div>
                 </div>
 

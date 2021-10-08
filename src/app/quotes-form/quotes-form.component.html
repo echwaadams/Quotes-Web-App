@@ -1,1 +1,46 @@
-<p>quotes-form works!</p>
+<div class="container-fluid">
+    <h2 class="heading">Add Quote</h2>
+
+    <form action="" (ngSubmit)='addQuote(); quotesForm.resetForm({})' #quotesForm='ngForm'>
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" class="form-control" id="name" [(ngModel)]="quoted.name" #name='ngModel' minlength="4" required>
+            <div *ngIf='name.invalid && name.dirty' class="alert alert-danger">
+                <div *ngIf="name.errors.required">
+                    Your name is required.
+                </div>
+                <div *ngIf="name.errors.minlength">
+                    Name is atleast 4 characters long.
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="name">Quote Title</label>
+            <input type="text" class="form-control" id="title" [(ngModel)]="quoted.quote" name="title" #title='ngModel'>
+            <div *ngIf="title.invalid && title.dirty" class="alert alert-danger">
+              <div *ngIf="title.errors.required">
+                Title is required.
+              </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="description">Quote </label>
+            <textarea name="quote" id="quote" rows="2" class="form-control" [(ngModel)]="quoted.quote" #quote="ngModel"></textarea>
+            <div *ngIf="quote.invalid && quote.dirty" class="alert alert-danger">
+              <div *ngIf="quote.errors.required">
+                Quote cannot be empty.
+              </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="name">Quote Author</label>
+            <input type="text" class="form-control" id="author" [(ngModel)]="quoted.author" name="author" #author='ngModel'>
+            <div *ngIf="title.invalid && title.dirty" class="alert alert-danger">
+              <div *ngIf="title.errors.required">
+                Author Name is required.
+              </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-sm btn-success">Add Quote</button>
+    </form>
+</div>
